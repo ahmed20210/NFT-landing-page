@@ -1,0 +1,84 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+p {
+  @apply text-gray-300;
+}
+.trangle::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  border-top: 55px solid #141a32;
+  border-right: 55px solid transparent;
+  border-bottom: 55px solid transparent;
+}
+.trangle::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: 25px;
+  width: 2px;
+  height: 75px;
+  background-color: cadetblue;
+  transform: rotate(45deg);
+}
+.trangle {
+  border: 2px solid cadetblue;
+}
+.text-gradient {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-gradient {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+.btn {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  @apply  py-1 px-4 rounded-lg;
+}
+.card {
+  @apply p-3 px-4 bg-gray-900 rounded-lg border border-violet-500 w-full sm:w-49 ;
+}
+@media (min-width: 1024px) {
+  .card {
+    height: 48%;
+  }
+}
+.card-header {
+  @apply flex items-center my-1;
+}
+.card-header > span {
+  @apply mr-3;
+}
+
+.trangl::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  border-top: 55px solid #141a32;
+  border-right: 55px solid transparent;
+  border-bottom: 55px solid transparent;
+}
+.trangl::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 0;
+  height: 0;
+  border-bottom: 55px solid #141a32;
+  border-left: 55px solid transparent;
+  border-top: 55px solid transparent;
+}
+.trangl {
+  border: 1px solid cadetblue;
+}
