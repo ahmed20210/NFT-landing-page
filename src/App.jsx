@@ -1,6 +1,5 @@
 import { useState } from 'react'
 // components
-import Roadmap from './components/Roadmap'
 import Header from './components/Header'
 // import Footer from './components/Footer'
 import Market from './components/Market'
@@ -9,6 +8,7 @@ import Team from './components/Team'
 import Features from './components/Features'
 import Home from './components/Home'
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -18,10 +18,9 @@ function App() {
       <Home />
       <WhyUs />
       <Features />
-      <Roadmap />
       <Market />
-
       <Team />
+      <Footer/>
     </div>
   );
 }

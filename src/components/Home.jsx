@@ -4,7 +4,7 @@ function Home() {
  
   return (
     <>
-      <div className="flex justify-between gap-5 flex-col md:flex-row mt-10 mb-20 items-center">
+      <div className="flex justify-between gap-5 flex-col md:flex-row mt-10 mb-20 items-center ">
         <div className="lg:w-5/12 md:w-6/12 sm:w-9/12 w-11/12">
           <h1 className="sm:text-4xl text-xl font-bold">
             Faster, Cheaper and more Powerful <span className=" text-gradient">Staking</span>
@@ -17,9 +17,9 @@ function Home() {
           <button className="btn">GET STARTED</button></div>
         </div>
 
-        <div className="lg:w-4/12 md:w-5/12 sm:w-9/12 w-11/12">
-          <div className="relative trangle">
-            <img width={500} src={image} alt="" />
+        <div className="lg:w-5/12 md:w-5/12 sm:w-9/12 w-11/12">
+          <div className="relative trangle md:h-72">
+            <img className="h-full"  src={image} alt="" />
           </div>
           <ul className="flex justify-between my-5 text-center">
             <li className="">
@@ -42,7 +42,7 @@ function Home() {
           </ul>
         </div>
       </div>
-      <div></div>
+      
     </>
   );
 }
